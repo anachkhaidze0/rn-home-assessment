@@ -4,8 +4,11 @@
     "slug": "rn-home-assessment",
     "version": "1.0.0",
 
+    "newArchEnabled": true,
+
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
 
     "experiments": {
@@ -17,7 +20,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
 
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
 
     "splash": {
       "image": "./assets/splash.png",
