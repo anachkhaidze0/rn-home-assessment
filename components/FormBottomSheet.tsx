@@ -43,8 +43,9 @@ const FormBottomSheet = ({ theme }: FormBottomSheetProps) => {
     <BottomSheetModalProvider>
       <TouchableOpacity onPress={handlePresentModalPress}>
         <TextInput
-          className={`${theme === 'dark' ? 'bg-background-dark text-text-dark' : 'bg-background-light text-text-light'}  mx-5 h-14 rounded-md p-4`}
+          className={`${theme === 'dark' ? 'bg-background-dark ' : 'bg-background-light placeholder-text-light'}  mx-5 h-14 rounded-md p-4`}
           placeholder="Sex"
+          placeholderTextColor={`${theme === 'dark' ? '#fff' : '#000'}`}
           editable={false}
           value={sex}
         />
